@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sparksupport
+    username: root
+    password: manager123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # You can also use 'create-drop' for development, or 'none' for production
+    show-sql: true # Set to 'false' in production
+    database-platform: org.hibernate.dialect.MySQLDialect
+    
