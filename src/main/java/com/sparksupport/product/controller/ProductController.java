@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sparksupport.product.dto.ProductDto;
 import com.sparksupport.product.entity.Product;
-import com.sparksupport.product.service.ProductService;
+import com.sparksupport.product.service.IProductService;
 
 import jakarta.validation.Valid;
 
@@ -29,7 +29,7 @@ import jakarta.validation.Valid;
 public class ProductController {
 
 	@Autowired
-	private ProductService productService;
+	private IProductService productService;
 
 	/**
 	 * Adds a new product.
